@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+  
+  <div id="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+
+  <div id="sidebar">
+    <center><h2>My Blog Site</h2>
+    <p>Built with Python & Django</p></center>
+  </div>
+
+</body>
+</html>
